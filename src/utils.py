@@ -2,8 +2,7 @@ from src.api import HhRu
 from src.files import JsonFiles
 
 
-def user_interface():
-
+def user_interface() -> None:
 
     hh = HhRu()
     storage = JsonFiles()

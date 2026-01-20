@@ -719,5 +719,54 @@
         "salary_from": 0,
         "salary_to": 0,
         "description": "Уверенные знания Python 3, чистый читаемый код. Опыт разработки REST API (FastAPI). Базовые знания SQL, опыт работы с PostgreSQL. "
+    },
+    {
+        "title": "Junior Data Scientist",
+        "url": "https://hh.ru/vacancy/129286290",
+        "salary_from": 0,
+        "salary_to": 0,
+        "description": "Высшее образование (техническое, математическое, экономическое). Владение Python (библиотеки pandas, numpy, sklearn, xgboost, prophet, plotly, matplotlib, seaborn). Навыки проведения разведочного анализа..."
+    },
+    {
+        "title": "Аналитик данных",
+        "url": "https://hh.ru/vacancy/127890486",
+        "salary_from": 0,
+        "salary_to": 0,
+        "description": "Владение специализированными программами и платформами для анализа данных, такими как Excel, SQL, Python, а также BI-инструментами, дополнительным преимуществом является..."
+    },
+    {
+        "title": "Backend-разработчик",
+        "url": "https://hh.ru/vacancy/129525278",
+        "salary_from": 0,
+        "salary_to": 0,
+        "description": "Python 3.8+ (от 3х лет): глубокое понимание асинхронности (asyncio/gevent) и конкурентности (threads/processes), GIL и I..."
+    },
+    {
+        "title": "Аналитик больших данных",
+        "url": "https://hh.ru/vacancy/129483824",
+        "salary_from": 0,
+        "salary_to": 0,
+        "description": "Опыт работы ML-инженером / DS или аналогичной роли от 3 лет. Уверенное владение Python и основными ML-библиотеками (pandas, scikit..."
+    },
+    {
+        "title": "QA Engineer (Manual)",
+        "url": "https://hh.ru/vacancy/129486630",
+        "salary_from": 0,
+        "salary_to": 0,
+        "description": "Опыт работы с инструментами CI/CD (например, Jenkins, GitLab CI/CD). Опыт в автоматизации тестирования (Python, pytest, Selenium, Allure). "
+    },
+    {
+        "title": "Ведущий Python-разработчик",
+        "url": "https://hh.ru/vacancy/128833799",
+        "salary_from": 0,
+        "salary_to": 0,
+        "description": "Опыт профессиональной разработки на Python от 4-х лет. Понимание принципов построения и развертывания высоконагруженных сервисов с DL-моделями. "
+    },
+    {
+        "title": "Проджект менеджер/бизнес-ассистент",
+        "url": "https://hh.ru/vacancy/129607379",
+        "salary_from": 180000,
+        "salary_to": 250000,
+        "description": "3+ года в Ops/EA/Project Ops в IT / продуктовой среде. Сильная структура: планы, дедлайны, риски, Definition of Done..."
     }
 ]
