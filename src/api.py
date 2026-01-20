@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 import requests
+from src.vacancies import Vacancy
 
 class AbstractApi(ABC):
     """Абстрактный класс для работы с API"""
@@ -48,5 +49,18 @@ class HhRu(AbstractApi):
         )
         response.raise_for_status()
 
-        data = response.json()
-        return data["items"]
+        data = response.json()["items"]
+
+        vacancies = []
+        for item in data:
+            salary = item.get("salary") or {}
+            vacancy = Vacancy(
+                title=item.get("name"),
+                url=item.get("alternate_url"),
+                salary_from=salary.get("from"),
+                salary_to=salary.get("to"),
+                description=item.get("snippet", {}).get("requirement")
+            )
+            vacancies.append(vacancy)
+
+        return vacancies
