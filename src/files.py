@@ -25,7 +25,12 @@ class JsonFiles(AbstractFiles):
     """Класс для работы с вакансиями в JSON-файле."""
 
     def __init__(self, filename="vacancies.json"):
-        self.__filename = filename
+        base_dir = os.path.dirname(os.path.dirname(__file__))
+        data_dir = os.path.join(base_dir, "data")
+
+        os.makedirs(data_dir, exist_ok=True)
+
+        self.__filename = os.path.join(data_dir, filename)
 
     def add_vacancies(self, vacancies):
         """Добавляет вакансии в JSON-файл, избегая дублирования по URL."""

@@ -28,29 +28,20 @@ class HhRu(AbstractApi):
 
     def __connect_api(self):
         """Приватный метод подключения к API hh.ru"""
-        response = requests.get(self.__base_url, headers=self.__headers)
+        response = requests.get(self.__base_url, headers=self.__headers, params={"per_page": 1})
         response.raise_for_status()
-        return requests
+        return None
 
     def get_vacancies(self, vacancy_name):
         """Получение вакансий по ключевому слову"""
 
-        requests_obj = self.connect_api()
+        self.connect_api()
 
-        params = {
-            "text": vacancy_name,
-            "per_page": 100
-        }
-
-        response = requests_obj.get(
-            self.__base_url,
-            headers=self.__headers,
-            params=params
-        )
+        params = {"text": vacancy_name, "per_page": 100}
+        response = requests.get(self.__base_url, headers=self.__headers, params=params)
         response.raise_for_status()
 
-        data = response.json()["items"]
-
+        data = response.json().get("items", [])
         vacancies = []
         for item in data:
             salary = item.get("salary") or {}

@@ -1,3 +1,6 @@
+import re
+
+
 class Vacancy:
     """Класс для работы с вакансиями"""
 
@@ -42,7 +45,7 @@ class Vacancy:
     @staticmethod
     def __validate_description(description):
         """Возвращает описание вакансии или 'Описание не указано', если пустое."""
-        return str(description) if description else "Описание не указано"
+        return re.sub(r"</?highlighttext>", "", description) if description else "Описание не указано"
 
     @property
     def title(self):
@@ -67,3 +70,13 @@ class Vacancy:
     def __repr__(self):
         """Строковое представление объекта для отладки и печати."""
         return f"Vacancy(title={self.__title!r}, salary_from={self.__salary_from}, salary_to={self.__salary_to})"
+
+    def to_dict(self):
+        """Конвертация объекта Vacancy в словарь для JSON"""
+        return {
+            "title": self.title,
+            "url": self.url,
+            "salary_from": self.salary_from,
+            "salary_to": self.salary_to,
+            "description": self.description
+        }
