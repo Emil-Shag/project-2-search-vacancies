@@ -698,5 +698,26 @@
         "salary_from": 200000,
         "salary_to": 250000,
         "description": "Необходимые практические навыки:. Опыт разработки кода на языке Python (анализ данных, работа с базами данных, web-scraping) Построение SQL-запросов. "
+    },
+    {
+        "title": "Data Scientist Intern/Junior in Financial Risk Management team",
+        "url": "https://hh.ru/vacancy/129231865",
+        "salary_from": 0,
+        "salary_to": 0,
+        "description": "К вашим преимуществам будет относиться: Уверенное владение библиотеками Python: numpy, pandas, scikit-learn, matplotlib/seaborn, pytorch/tensorflow. Знания финансовой математики..."
+    },
+    {
+        "title": "Инженер по тестированию OLTP",
+        "url": "https://hh.ru/vacancy/129662529",
+        "salary_from": 0,
+        "salary_to": 0,
+        "description": "Знание основ компьютерных сетей. Базовые навыки программирования на языках Java/Python. Опыт работы с реляционными СУБД (Oracle, PostgreSQL), знание SQL..."
+    },
+    {
+        "title": "Python разработчик (Middle)",
+        "url": "https://hh.ru/vacancy/129395329",
+        "salary_from": 0,
+        "salary_to": 0,
+        "description": "Уверенные знания Python 3, чистый читаемый код. Опыт разработки REST API (FastAPI). Базовые знания SQL, опыт работы с PostgreSQL. "
     }
 ]

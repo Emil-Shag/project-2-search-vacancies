@@ -17,14 +17,6 @@ class Vacancy:
         """Сравнивает вакансии по минимальной зарплате"""
         return self.__salary_from < other.__salary_from
 
-    def __gt__(self, other):
-        """Сравнивает вакансии по минимальной зарплате"""
-        return self.__salary_from > other.__salary_from
-
-    def __eq__(self, other):
-        """Сравнивает вакансии по минимальной зарплате"""
-        return self.__salary_from == other.__salary_from
-
     @staticmethod
     def __validate_title(title):
         """Возвращает title или 'Название не указано', если пустой."""
